@@ -14,6 +14,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import styled from 'styled-components'
 import Cart from './components/Cart';
 import About from './components/About';
+import Bucket from './components/Bucket';
 function App() {
 
   const [message,setMessage]=useState();
@@ -46,8 +47,8 @@ function App() {
            <Route path='/Home'>
              <Home message={message} cartFilter={cartFilter} setCartFilter={setCartFilter}/>
            </Route>
-           <Route path='/cart' >
-             <Cart/>
+           <Route path='/Bucket' >
+             <Bucket/>
            </Route>
            <Route path='/about'>
              <About/>

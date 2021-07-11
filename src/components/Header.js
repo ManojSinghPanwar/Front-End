@@ -73,7 +73,7 @@ function Header(props) {
                   </Ab>
                   <Ab>
                   <ShoppingCartIcon/>
-                  <Link to={{pathname:'/cart', state:{cartFilter,setCartFilter}}}>
+                  <Link to='/Bucket'>
                   <span>CART</span>
                   </Link>
                   </Ab>

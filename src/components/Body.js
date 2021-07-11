@@ -29,7 +29,9 @@ function Body(props) {
               x._id === product._id ? { ...exist, quant: exist.quant + 1 } : x
             )
           );
-          localStorage.setItem("cart",cartFilter);
+          const cartString=JSON.stringify(cartFilter);   
+          localStorage.setItem("cart",cartString);
+       
         } else {
           setCartFilter([...cartFilter, { ...product, quant: 1 }]);
         }
